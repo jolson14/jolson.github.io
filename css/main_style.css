@@ -1,17 +1,50 @@
 /*
 Colorblind safe color palette from colorbrewer2.org.
-#fef0d9 - light yellow
-#fdcc8a - yellow
-#fc8d59 - orange
-#e34a33 - red
-#b30000 - darker red
+#d7191c - Red
+#fdae61 - Orange
+#ffffbf - Off Yellow
+#abd9e9 - Light Blue
+#2c7bb6 - Blue
 */
 body {
-  background-color: #b30000;
-  color: #e34a33;
+  background-color: #92c5de;
+  color: #0571b0;
   text-align: center;
+  margin: 0;
 }
 
 h1 {
-  color: #fc8d59;
+  color: #f7f7f7;
+  padding: 5px;
+  margin: 0;
+}
+
+#body-container {
+  background-color: #f7f7f7;
+  max-width: 1000px;
+  margin: auto;
+  min-height: 100vh;
+  border: 2px solid #f7f7f7;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#header {
+  background-color: #0571b0;
+}
+#profile-picture {
+  float: left;
+}
+#welcome-text {
+  padding-top: 25px;
+
+  font-size: 25px;
+}
+#research-interests {
+  text-align: left;
+
+  font-size: 25px;
+
+  position: relative;
+
+  left: 50px;
 }
