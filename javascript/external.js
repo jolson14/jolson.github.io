@@ -11,5 +11,15 @@ document.write(out);
 */
 
 //prompt box that allows users to input a value before entering the webpage
+/*
 user_name = window.prompt("Please enter your name", "Type your name here");
 document.write(user_name);
+*/
+
+a = 22;
+const b = 33;
+document.writeln(a + b);
+document.writeln("<br>");
+document.writeln(a += b);
+document.writeln("<br>");
+document.writeln(a += b);
