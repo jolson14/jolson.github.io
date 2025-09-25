@@ -11,13 +11,14 @@
     <div id="header">
       <h1>Hello, welcome <script src="javascript/external.js"></script>! </h1> <!--displays user's name in heading-->
     </div>
+
     <div id="profile-picture">
       <img src=images/profile-picture.jpg width=500px height=500px />
     </div>
     <div id="welcome-text">
 
       <p>
-        Welcome to my webpage.<br>
+        My name is Jared Olson.<br>
         I am a student in the
         <a href="https://www.geo.txstate.edu/" target="_blank"> Department of Geography and Environmental Studies<a/> at
         <a href="https://www.txst.edu/" target="_blank"> Texas State University<a/>.
@@ -32,6 +33,16 @@
           <li>Sustainability</li>
         </ol>
       </p>
+    </div>
+    <div id = "copyright">
+        <script>
+          //Sets a varaible for today's date.
+          var today = new Date();
+          //Sets a variable to get the date's year.
+          var year = today.getFullYear();
+          //Prints out the the words copyright and the copyright symbol with the year after.
+          document.writeln("Copyright &copy; " + year);
+        </script>
     </div>
   </div>
 </body>
