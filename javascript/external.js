@@ -2,7 +2,10 @@
 //document.write(user_name);
 var webmaps =
 [
-  ["Oil Spill Toolkit", "https://www.glo.texas.gov", "The oil spill toolkit developed by Enterprise Technology Solutions is neat."], ["Texas Ecosystems Analytical Mapper", "http://tpwd.texas.gov/gis/team/", "The Texas Parks and Wildlife's Landscape Ecology program is great."]
+  ["Google Maps", "https://www.google.com/maps",
+  "One huge web mapping example that many use everyday is Google Maps, which allows users to look at features and info about them on a map and can give directions to the areas. Some strengths of Google Maps are that it is easy to use and has fairly accurate data in more densely populated areas. Some things that are cons of Google Maps are that it may have inaccurate information in less travelled areas and needs a connection to be able to access. "]
+  , ["Accuweather", "https://www.accuweather.com/en/us/san-marcos/78666/weather-radar/335932",
+  "Another example of web mapping would be weather trackers (Accuweather was used in this case), which allow users to see future weather patterns for areas around the world. The strength of an application like this is the ability to plan ahead of time and prepare accordingly. A con would be that weather is always subject to change and these future predictions are not always accurate."]
 
 ];
 
@@ -27,9 +30,21 @@ function webmap_table()
     document.write("<tr>");
     for (var column=0; column < webmaps[0].length; column++)
     {
-      document.write("<td>" + webmaps[row][column] + "</td>");
+      var txt = webmaps[row][column]; //sets the webmap arrays to a variable for QOL
+
+      if (column < 2) //checks for if the column value is less than 2 in the array
+      {
+        document.write("<td>" + txt + "</td>");
+      }
+
+      else //this separates the third array element form the first two, allowing for better positioning in the webpage
+      {
+        document.write("</tr>");
+        document.write("<tr><td colspan='2'>" + txt + "</td></tr>");
+      }
+
     }
-    document.write("</tr>");
+
   }
   document.write("</table>");
   return "";
