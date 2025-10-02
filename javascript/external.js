@@ -30,14 +30,17 @@ function webmap_table()
     document.write("<tr>");
     for (var column=0; column < webmaps[0].length; column++)
     {
-      var txt = webmaps[row][column]; //sets the webmap arrays to a variable for QOL
+      //sets the webmap arrays to a variable for QOL
+      var txt = webmaps[row][column];
 
-      if (column < 2) //checks for if the column value is less than 2 in the array
+      //checks for if the column value is one of the first two elements in the array
+      if (column < 2)
       {
         document.write("<td>" + txt + "</td>");
       }
 
-      else //this separates the third array element form the first two, allowing for better positioning in the webpage
+      //moves third element in the array to its own row and positions text a bit better
+      else
       {
         document.write("</tr>");
         document.write("<tr><td colspan='2'>" + txt + "</td></tr>");
