@@ -9,7 +9,7 @@ body {
   display: inline-block;
 }
 
-.dropbtn {
+.dropbtn { /* drop down button */
   background-color: #007BFF;
   color: white;
   font-size: 16px;
@@ -17,11 +17,11 @@ body {
   border-radius: 4px;
 }
 
-.dropbtn:hover {
+.dropbtn:hover {  /* changes bachground color when hovering over button */
   background-color: #0056b3;
 }
 
-.dropdown-content {
+.dropdown-content { /* styles the drop down menu */
   display: none;
   position: absolute;
   background-color: white;
@@ -29,22 +29,22 @@ body {
   border-radius: 4px;
 }
 
-.dropdown-content a {
+.dropdown-content a { /* styles the individual links within the drop down menu */
   color: #333;
   padding: 10px 16px;
   text-decoration: none;
   display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover { /* changes the background color when hovering over the individual links */
   background-color: #f1f1f1;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content { /* allows for dropdown menu content to appear when hovering over the button */
   display: block;
 }
 
-#viewDiv {
+#viewDiv { /* edits container of the map */ 
   width: 100%;
   height: 600px;
   margin-top: 10px;
@@ -52,10 +52,10 @@ body {
 
 footer {
   position: absolute;
-  bottom: 20px;     /* distance from bottom of the map */
+  bottom: 20px;
   left: 45%;
-  background: rgba(0, 0, 0, 0.5); /* optional: semi-transparent background */
-  color: white;     /* make it visible */
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent background added to copyright text */
+  color: white;
   border-radius: 5px;
   font-size: 14px;
 }
